@@ -37,14 +37,6 @@ void MazeGenerator::startGeneration() {
 		walkBack = false;
 
 
-		//REMOVE LATER() {
-		//printMaze();
-		//system("PAUSE");
-		//system("CLS");
-		//}
-
-
-
 		checkDirections(posY, posX);
 		randomIndex();
 
@@ -272,8 +264,8 @@ void MazeGenerator::savePosition(int x, int y) {
 }
 
 void MazeGenerator::backTrack(int& x, int& y) {
-	oldPositions.pop_back(); // error
-	oldPositions.pop_back(); //error
+	oldPositions.pop_back();
+	oldPositions.pop_back();
 
 	x = oldPositions[oldPositions.size() - 2];
 	y = oldPositions[oldPositions.size() - 1];
